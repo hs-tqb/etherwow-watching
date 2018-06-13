@@ -16,7 +16,8 @@ koa.use(ctx=>{
 
 const Web3 = require('web3')
 // const web3 = new Web3(new Web3.providers.HttpProvider("https://jsonrpc.medishares.net"))
-const web3 = new Web3(new Web3.providers.HttpProvider("http://47.75.185.67:8545"))
+// const web3 = new Web3(new Web3.providers.HttpProvider("http://47.75.185.67:8545"))
+const web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"))
 const eth  = web3.eth
 
 // -------------------- contaract --------------------
@@ -27,7 +28,7 @@ contract.allEvents({
   // _userAddress: '',
   fromBlock : eth.blockNumber-(60*24*15) * 100
 },(err,res)=>{
-  // console.log( res.event )
+  console.log( res.event )
   io.socket.emit('newRecord', recordData.push(res))
 })
 
