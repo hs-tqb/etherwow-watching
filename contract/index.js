@@ -7,7 +7,7 @@ module.exports = {
     //
 
     // 正式版
-    '0x2D05359A51ca13C4ac5f4437585AFaf5bF2050F9',
+    '0xa6aef41be341fb364a432fb04a5d2bdd57546c76',
     // '0xb0a0968b6cff27d4b0abb576f473076b49b3f4b6',
     // '0xe7fca0faf2636a4bbd5143d4f6e0667943ed9694',
 
