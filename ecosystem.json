@@ -1,0 +1,14 @@
+{
+  "apps":[{
+    "name":"etherwow",
+    "cwd":"/mnt/data/wwwroot/web/etherwow-watching",
+    "script":"npm",
+    "args":"run start"
+  },{
+    "name":"etherwow-test",
+    "cwd":"/mnt/data/wwwroot/web/etherwow-watching",
+    "script":"npm",
+    "args":"run test"
+  }]
+}
+    

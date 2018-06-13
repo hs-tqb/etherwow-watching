@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  1111213
+  <!-- <script src="./script/socket.io.js"></script> -->
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+  <script src="https://cdn.bootcss.com/socket.io/2.1.0/socket.io.dev.js"></script>
+  <!-- <script>
+    var socket = io.connect('http://127.0.0.1:7777');
+    // on和emit的名字可以自己定义, 只要双端能对齐上就行
+    socket.on('receive1', function (data) {
+      console.log('receive1: ' + JSON.stringify(data));
+    });
+    socket.on('receive2', function (data) {
+      console.log('receive2: ' + JSON.stringify(data));
+    });
+    socket.emit('lalalalala', { data: 'lalalalala' });
+    socket.emit('lululululu', { data: 'lululululu' });
+  </script> -->
+  <script>
+    var socket = io.connect('http://127.0.0.1:3111');
+    socket.on('initRecord', function(data) {
+      console.log( 'init', data )
+    })
+    socket.on('newRecord', function(data) {
+      console.log( 'new record', data )
+    })
+  </script>
+</body>
+</html>

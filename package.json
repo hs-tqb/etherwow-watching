@@ -1,0 +1,16 @@
+{
+  "name": "etherwow-watching",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nodemon ./server",
+    "test": "cross-env NODE_ENV=development nodemon ./server",
+    "start": "cross-env NODE_ENV=production node ./server"
+  },
+  "dependencies": {
+    "cross-env": "^5.1.6",
+    "koa": "^2.5.1",
+    "koa-socket": "^4.4.0",
+    "nodemon": "^1.17.5",
+    "web3": "^0.20.6"
+  }
+}
